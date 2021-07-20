@@ -78,6 +78,10 @@
               "browserTarget": "gamer-hive:build:development"
             }
           },
+          "options": {
+            "browserTarget": "gamer-hive:build",
+            "proxyConfig": "src/proxy.conf.json"
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
