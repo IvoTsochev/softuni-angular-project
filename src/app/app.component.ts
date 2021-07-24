@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ContentService } from './content.service'
 
 @Component({
   selector: 'app-root',
@@ -7,9 +6,5 @@ import { ContentService } from './content.service'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private content: ContentService) {
-    this.content.loadGames().subscribe(data => {
-      console.warn(data)
-    })
-  }
+  title = 'gamer-hive';
 }
